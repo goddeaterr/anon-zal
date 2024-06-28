@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Žaliakalnio Anon Crew</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <p><i class="fab fa-instagram"></i> <strong>Наш партнер: <a href="#" id="partner-link">https://www.instagram.com/priznanyja_zaliakalnio/</a></strong></p>
+    </div>
+    <div class="info-section" style="margin-top: 40px; max-width: 300px; word-wrap: break-word;">
+        <i class="fas fa-info-circle"></i> <strong>Информация о сайте:</strong><br>
+        <ul style="padding-left: 20px;">
+            <li><strong>Анонимность:</strong> <span id="anon-info">Сайт полностью анонимен, пользователи могут выражать свои чувства и делиться эмоциями безопасно и анонимно.</span></li>
+            <li><strong>Имена юзеров:</strong> <span id="usernames-info">Каждый пользователь получает случайное имя "Anon {номер}", которое сохраняется на время текущей сессии.</span></li>
+            <li><strong>Модераторы:</strong> <span id="moderators-info">Модераторы имеют специальные права на удаление постов и комментариев. Их имена выделены синим значком.</span></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="stats">
+            <p><i class="fas fa-users"></i> <strong>Всего посещений:</strong> <span id="totalVisitors"></span></p>
+            <p><i class="fas fa-pencil-alt"></i> <strong>Всего постов:</strong> <span id="totalPosts"></span></p>
+        </div>
+        <h1>Žaliakalnio Anon Crew <img src="pics/logo.png" alt="Logo" style="width:50px; height:auto; margin-left:10px;"></h1>
+        <div class="new-post">
+            <textarea id="postContent" placeholder="Поделитесь своими мыслями!"></textarea>
+            <button onclick="createPost()">Post</button>
+        </div>
+        <div id="posts"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
